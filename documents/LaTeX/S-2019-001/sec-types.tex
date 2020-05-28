@@ -243,7 +243,7 @@
 % inverseOutputTransformType
 \complexType{aces:inverseOutputTransformType}
                 {Type defining the elements to communicate information about an ACES Inverse Output Transform. This type is used to define an inverse ACES pipeline to specify how output referred image data should be converted to ACES.}
-                {extension of texttt{aces:transformType}}
+                {extension of \texttt{aces:transformType}}
                 {aces:description, aces:hash, aces:transformId}
 
 % inverseReferenceRenderingTransformType
@@ -269,7 +269,7 @@
 % outputTransformType
 \complexTypeCWA{aces:outputTransformType}
                 {Type defining the elements to communicate information about an ACES Output Transform associated with an ACES viewing pipeline.}
-                {extension of texttt{aces:transformType}}
+                {extension of \texttt{aces:transformType}}
                 {aces:description, aces:hash, aces:outputDeviceTransform,\\ aces:referenceRenderingTransform, aces:transformId}
                 {applied}
 
@@ -282,7 +282,7 @@
 % pipelineType
 \complexType{aces:pipelineType}
             {Type defining a sequence of elements used to communicate an ACES viewing pipeline}
-            {xs:sequence}
+            {\texttt{xs:sequence}}
             {aces:pipelineInfo, aces:inputTransform, aces:lookTransforms,\\ aces:outputTransform}
  
 % referenceRenderingTransformType
